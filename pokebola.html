@@ -5,16 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokebola com CSS</title>
     <style>
+        @keyframes rodar {
+            0% {
+            transform: translateX(0) rotate(0);
+        }
+        20% {
+            transform: translateX(-10px) rotate(-20deg);
+        }
+        30% {
+            transform: translateX(10px) rotate(20deg);
+        }
+        50% {   
+            transform: translateX(-10px) rotate(-10deg);
+        }
+        60% {
+            transform: translateX(10px) rotate(10deg);
+        }
+        100% {
+            transform: translateX(0) rotate(0);
+        }
+        }
+        @keyframes piscar {
+            from{background-color: white;}
+            to{background-color: red;}
+        }
         .base{
             background-color: rgb(255, 255, 255);
             height: 200px;
             width: 200px;
-            border: 2px black solid;
+            border: 15px black solid;
             border-radius: 50%;
             position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
+            animation: rodar 1s ease-in-out 1s 3;
+            animation-delay: 2s;
+   
+        }
+        .base:hover{     
+            animation: rodar 1s ease-in-out 1s 3;
+
         }
         .topo{
             background-color: red;
@@ -34,7 +62,7 @@
             height: 50px;
             border-radius: 50%;
             background-color: white;
-            border: 2px solid black;
+            border: 5px solid black;
             position:absolute;
             left: 50%;
             top: 50%;
@@ -44,10 +72,8 @@
             width: 25px;
             height: 25px;
             transform: translate(-50%,-50%);
-        }
-        .menor:hover{
-            background-color: red;
-            transition: 0.5s;
+            animation: piscar 1s ease-in-out 1s 3;
+            animation-delay: 2s;
         }
         .brilho{
             position: absolute;
