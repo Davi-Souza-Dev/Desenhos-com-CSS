@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo animado</title>
+    <style>
+        @keyframes movimento {
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0% 50%;
+            }
+        }
+
+       body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: 300% 300%;
+        height: 90vh;
+        background-image: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-repeat: no-repeat;
+        animation: movimento 5s ease alternate infinite;
+       }
+       
+       h1{
+        font-size: 300%;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+        color: white;
+       }
+    </style>
+</head>
+<body>
+    <h1>ANIMAÇÃO</h1>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freddy</title>
+    <style>
+        @keyframes piscar {
+            to{
+                height: 2px;
+            }
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: lightblue;
+        }
+        .cabeca{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+        }
+        .corpo{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        .olho{
+            background-color: black;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            animation: piscar 2s infinite alternate-reverse;
+        }
+        
+        .botao{
+            background-color: black;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cabeca">
+        <div class="olho"></div>
+        <div class="olho"></div>
+    </div>
+    <div class="corpo">
+        <div class="botao"></div>
+        <div class="botao"></div>
+        <div class="botao"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        
+        @keyframes pulse {
+           to{
+            border: 20px solid transparent;
+           }
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .fundo{
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+        div.base{
+            margin: 10px;
+            width: 200px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: flex-start;
+            border: 2px white solid;    
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px rgb(255, 255, 255);
+        }
+
+        div#Luffy:hover{
+            box-shadow: 0px 0px 20px red;
+            transition: all 0.3s;
+            border-color: rgb(133, 3, 3);
+            background: url(imagens/Luffy.jfif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        
+        div#Luffy{
+            background: linear-gradient(to top, rgba(18,36,0,0) 6%, rgba(121,9,9,0.2359068627450981) 29%, rgba(251, 208, 208, 0.502) 64%), url(imagens/Luffy.jfif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+
+        div#zoro:hover{
+            box-shadow: 0px 0px 20px rgb(0, 251, 0);
+            transition: all 0.5s;
+            border-color: rgba(3, 251, 3, 0.82);
+            background: url(imagens/zoro.jfif);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            
+        }
+        
+        div#zoro{
+            background: linear-gradient(to bottom, rgba(10, 36, 0, 0) 6%, rgba(35, 121, 9, 0.236) 29%, rgba(208, 251, 214, 0.502) 64%), url(imagens/zoro.jfif);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        div#sanji:hover{
+            box-shadow: 0px 0px 20px rgba(247, 251, 3, 0.82);
+            transition: all 0.5s;
+            border-color: rgba(247, 251, 3, 0.82);
+            background: url(imagens/sanji.jfif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        
+        div#sanji{
+            background: linear-gradient(to bottom, rgba(10, 36, 0, 0) 6%, rgba(35, 121, 9, 0.236) 29%, rgba(208, 251, 214, 0.502) 64%), url(imagens/sanji.jfif);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        p{
+            margin-top: 10px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 4px white solid;
+            text-align: center;
+            font-weight: bolder;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body class="fundo">
+    <div class="base" id="zoro"></div>
+    <div class="base" id="Luffy"></div>
+    <div class="base" id="sanji"></div>
+</body>
+</html>

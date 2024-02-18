@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações de Scroll com CSS PURO</title>
+    <style>
+        *{
+            padding-top: 0px;
+            margin: 0px;
+        }
+
+        @keyframes sair {
+            from{
+                height: 100vh;
+            }
+            to{
+                height: 10vh;
+            }
+            
+        }
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: black;
+        }
+
+        img{
+            height: 100vh;
+            animation: sair 5ms;
+            animation-timeline: scroll();
+
+            border: 5px solid red;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        h1{
+            font-size: 50px;
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        p{
+            color: white;
+            width: 50%;
+            text-indent: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="imagens/Luffy.jfif" alt="teste">
+    <h1>Monkey D. Luffy</h1>
+    <p>Monkey D. Luffy, também conhecido como "Luffy do Chapéu de Palha" e comumente como "Chapéu de Palha", é o fundador e capitão dos cada vez mais infames e poderosos Piratas do Chapéu de Palha, bem como o mais poderoso de seus melhores lutadores.[26][27] Ele deseja encontrar o tesouro lendário deixado para trás pelo falecido Gol D. Roger e assim se tornar o Rei dos Piratas,[28] o que ajudaria a facilitar um sonho desconhecido dele que ele contou apenas para Shanks, seus irmãos e tripulação. Ele acredita que ser o Rei dos Piratas significa ter a maior liberdade do mundo.[31]
+    </p>
+    <p>
+    Nascido na Vila Foosha, Luffy acidentalmente comeu a Gomu Gomu no Mi aos 7 anos de idade, que deu ao seu corpo propriedades de borracha.[32] Nesta época, Luffy conheceu Shanks, "o Ruivo", que lhe deu seu chapéu de palha como parte de uma promessa para que eles se encontrassem novamente. Luffy é o filho do líder Revolucionário Monkey D. Dragon,[33] neto paterno do herói da Marinha Monkey D. Garp,[34] irmão jurado do falecido "Punhos de Fogo" Portgas D. Ace e do chefe de gabinete Revolucionário Sabo, e filho adotivo de Curly Dadan. Ele é uma das poucas pessoas no mundo que carregam a Vontade de D.</p>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorvete</title>
+    <style>
+        @keyframes cor {
+            0%{
+                background-color: red;
+            }
+            20%{
+                background-color: greenyellow;
+            }
+            40%{
+                background-color: blueviolet;
+            }
+            60%{
+                background-color: chocolate;
+            }
+            80%{
+                background-color: pink;
+            }
+            100%{
+                background-color: orange;
+            }
+        }
+        @keyframes detalhe {
+            0%{
+                background-color: rgb(170, 6, 6);
+            }
+            20%{
+                background-color: rgb(89, 149, 0);
+            }
+            40%{
+                background-color: rgb(92, 21, 158);
+            }
+            60%{
+                background-color: rgb(138, 62, 7);
+            }
+            80%{
+                background-color: rgb(136, 9, 30);
+            }
+            100%{
+                background-color: rgb(92, 63, 9);
+            }
+        }
+        body{
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             flex-direction: column;
+             flex-wrap: wrap;
+             animation: detalhe 10s ease-in-out infinite alternate-reverse;
+        }
+        div.topo{
+            background-color: aqua;
+            height: 300px;
+            width: 200px;
+            border-radius: 100px 100px 0px 0px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+            animation: cor 10s ease-in-out infinite alternate-reverse;
+        }
+        div.palito{
+            width: 100px;
+            height: 150px;
+            background-color: rgb(198, 154, 43);
+        }
+        div.detalhe{
+            background-color: rgb(0, 118, 118);
+            height: 190px;
+            width: 50px; 
+            margin-top: 20px;  
+            border-radius: 20px;
+            animation: detalhe 10s ease-in-out infinite alternate-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="topo">
+        <div class="detalhe"></div>
+        <div class="detalhe"></div>
+    </div>
+    
+    <div class="palito"></div>
+    <div class="sombra"></div>
+</body>
+</html>
