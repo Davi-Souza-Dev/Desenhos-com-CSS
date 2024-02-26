@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic Run</title>
+    <style>
+        @keyframes run {
+            to{
+                left: -100px;
+            }
+            from{
+                left:110%;
+            }
+            
+        }
+        body{
+            background-image: url(imagens/greenhilzone.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+        }
+        .fundo{
+            width: 100%;
+        }
+        #sonic{
+            animation: run 2s reverse infinite;
+            z-index: 100;
+            width: 100px;
+            position: absolute;
+            top: 453px;
+            left: 70px;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <img id="sonic" src="imagens/sonic-run.gif" alt="sonic-run">
+</body>
+</html>
