@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digite uma cor</title>
+    <style>
+        body,html{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        inout{
+            width: 200px;
+            height: 30px;
+            border: 2px solid black ;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Ex: red, blue, violet" onkeyup="cor(this)">
+</body>
+
+    <script>
+        function cor(fundo){
+            document.body.style.background = fundo.value;
+        }
+    </script>
+</html>

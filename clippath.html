@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cilp path</title>
+    <style>
+        .elemento{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            clip-path: circle(5% at 95% 15%);
+            background-color: rgb(255, 0, 0);
+            border-radius: 20px;
+       cursor: crosshair;
+        }
+        .elemento:hover{
+            clip-path: circle(100%);
+            transition: 0.3s ease-in-out;
+       cursor: crosshair;
+           
+        }
+        p{
+            color: white;
+            width: 80%;
+       cursor: crosshair;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 99%;
+            height: 500px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="elemento">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum quibusdam quas praesentium, aut odit possimus dolor beatae animi asperiores nam est porro consequatur vitae nostrum, consequuntur, id magnam mollitia?
+        </p>
+    </div>
+</body>
+</html>
