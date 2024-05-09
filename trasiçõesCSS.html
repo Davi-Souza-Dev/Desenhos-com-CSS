@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trasnições</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        
+
+        .animation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 1;
+            
+        }
+
+        @keyframes cor{
+            from{
+                color: black;
+            }
+            to{
+                color: white;
+            }
+        }
+
+        .container>h1 {
+            width: 100%;
+            text-align: center;
+            font-size: 50px;
+            filter: invert();
+        }
+
+        .container>p {
+            width: 100%;
+            font-size: 15px;
+            text-align: justify;
+            filter: invert();
+        }
+
+        @keyframes diamond-in-center {
+        from {
+            clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+        }
+        to {
+            clip-path: polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%);
+        }
+        }
+
+[transition-style="in:diamond:center"] {
+  animation: 1.3s cubic-bezier(.25, 1, .30, 1) diamond-in-center both;
+}
+        
+
+    </style>
+</head>
+
+
+<body>
+    <div transition-style="in:diamond:center" class="animation"></div>
+    <div class="container">
+        <h1>HEADLINE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam non esse magnam asperiores ullam quas
+            numquam, officiis, earum sed culpa consectetur officia qui inventore vel. Voluptatibus suscipit corrupti
+            consequuntur cumque?</p>
+    </div>
+
+</body>
+
+</html>
